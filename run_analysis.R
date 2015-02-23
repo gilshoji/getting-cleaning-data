@@ -76,4 +76,4 @@ Finaldata  = Finaldata[,names(Finaldata) != 'activityId'];
 tidy = ddply(Finaldata, c("subjectId","activityType"), numcolwise(mean))
 
 # Export the Final_Data 
-write.table(Finaldata, 'C:/Gilson/coursera/Getting_Cleaning_Data/Project/UCI HAR Dataset/Final_Data.txt',row.name=FALSE,sep='\t');
+write.table(tidy, 'C:/Gilson/coursera/Getting_Cleaning_Data/Project/UCI HAR Dataset/Final_Data.txt',row.name=FALSE,sep='\t');
